@@ -44,6 +44,7 @@ header {
 /* Games Page styles */
 .games {
   padding: 20px;
+  text-align: center;
 }
 
 .games h1 {
@@ -59,6 +60,25 @@ header {
 .game p {
   margin: 10px;
 }
+  
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+  width: 75%;
+}
+
   </style>
 <!-- Content -->
 <head>
@@ -85,10 +105,12 @@ header {
   <!-- Games Section -->
   <main class="games">
     <h1>Games</h1>
-    <p>
+    <h3>
       Games are sorted by company. Click on the company name to discover the games I've played!
-    </p>
+    </h3>
   
+    <div class="row">
+  <div class="column">
     <!-- Hoyoverse Games -->
   <section id="Hoyoverse Games" class="games">
       <img src="ef6ae97143bb4b4fb023ddd6341d5823.png" alt="Hoyoverse Games" width="auto" height="300">
@@ -100,37 +122,28 @@ header {
       <img src="unnamed.png" alt="InFold Pte. Ltd." width="auto" height="300">
     <h2><a href="https://dreamingofyuu.github.io/fan_yukie_a3_gamespage_infold/">InFold Pte. Ltd. Games</a></h2>
     </section>
-      
+    
     <!-- Riot Games -->
     <section id="Riot Games" class="games">
       <img src="download.png" alt="Riot Games" width="auto" height="300">
     <h2><a href="https://dreamingofyuu.github.io/fan_yukie_a3_riot_games/">Riot Games</a></h2>
     </section>
-   
-    <!-- Mojang/Microsoft -->
-    <section id="Minecraft" class="games">
-      <h2>Minecraft</h2>
-      <img src="Minecraft_Bedrock_icon.png" alt="Minecraft">
-      <p>Platform Played on: PC <br>
-      Number of Months played: 5 <br>
-      Money spent: $0 <br>
-      Most Played Character: N/A <br>
-      Most Played Gamemode: Freeplay <br>
-      Rating: 10/10 <br>
-      Reason: Minecraft, my other slightly comfort game. I don't really play this one on my own either. I love building bases with friends and playing mini games (even though I'm really bad at them). However, I haven't played much since I get pretty motion sick from the game and after a while, the game gets a bit boring. The game is still ever-changing with each new update, so I look forward to those.</p>
-   </section>
+  </div>
     
-    <section id="The Sims 4" class="games">
-      <h2>The Sims 4</h2>
-      <img src="c66e591693fd6e7b26fc5a60efb68817.png" alt="The Sims 4">
-      <p>Platform Played on: PC <br>
-      Number of Months played: 10 <br>
-      Money spent: $??? <br>
-      Most Played Character: N/A <br>
-      Most Played Gamemode: N/A <br>
-      Rating: 8.5/10 <br>
-      Reason: I only play The Sims when I have time to. This includes time that I don't have academic work or when none of my friends are online to play. I don't remember how much I've spent on expansion packs and dlcs for this game, but it's been quite a few. I first got this game for my love of interior design. When I got this game, I was so sure that I was going to go to Ryerson for Interior Design, but I ended up going elsewhere. Nonetheless, it's always fun to customize my OCs from books I write into The Sims. I am able to build and better visualize how my imaginary world and characters would look.</p>
-   </section>
+  <div class="column">
+    <!-- Mojang/Microsoft -->
+    <section id="Mojang" class="games">
+      <img src="mojang-logo-988A631D5C-seeklogo.com.png" alt="Mojang" width="auto" height="300">
+    <h2><a href="https://dreamingofyuu.github.io/fan_yukie_a3_gamespage_mojang/">Mojang Studios</a></h2>
+    </section>
+    
+    <!-- EA Sports -->
+    <section id="EA Sports" class="games">
+      <img src="Electronic-Arts-Logo.svg.png" alt="EA Sports" width="auto" height="300">
+    <h2><a href="https://dreamingofyuu.github.io/fan_yukie_a3_gamespage_EA_sports/">EA Sports</a></h2>
+    </section>
+    </div>
+  </div>
   </main>
 </body>
 </html>
