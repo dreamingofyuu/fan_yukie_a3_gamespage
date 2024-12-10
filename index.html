@@ -3,11 +3,11 @@
 <style>
   /* General styles for all pages */
 body {
-  font-family: Courier, monospace;
+  font-family: Lucdia Console, monospace;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #d6ccf0;
+  color: white;
 }
 
 /* Header styles */
@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #4a4e69;
+  background-color: #9fccc6;
   color: white;
 }
 
@@ -32,13 +32,13 @@ header {
 }
 
 .nav-bar li {
-  margin: 0 15px;
+  margin: 30px;
+  font-size: 20px;
 }
 
 .nav-bar a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
 }
   
 /* Games Page styles */
@@ -50,13 +50,19 @@ header {
 .games h1 {
   font-family: Lucida Console, monospace;
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  
 }
   
 .games h2 {
   font-family: Lucida Console, monospace;
   text-align: center;
   margin-bottom: 30px;
+}
+  
+.games h3 {
+  font-family: Courier, monospace;
 }
 
 .game img {
@@ -65,9 +71,9 @@ header {
 }
 
 .game p {
-  margin: 10px;
+  margin: 50px;
 }
-  
+
   .row {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +91,68 @@ header {
   vertical-align: center;
   width: 75%;
 }
+  
+/* Links */
+  a:link {
+  color: #c1e3de;
+  background-color: transparent;
+  text-decoration: none;
+}
 
+a:visited {
+  color: #342166;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6a42d4;
+  background-color: transparent;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Top banner */
+.container {
+  position: relative;
+  text-align: center;
+  border: 10px solid #342166;
+  color: white;
+}
+  
+.container img {
+  opacity: 0.8;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+.bg-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: -10%;
+  left: 50%; 
+  height: 20%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  
+.bg-text h1 {
+  font-family: Lucida Console, monospace;
+  font-size: 40px;
+  background-color: rgba(0,0,0, 0.6);
+  border: 5px solid #f1f1f1;
+  padding: 20px;
+  }
+  
   </style>
 <!-- Content -->
 <head>
@@ -98,7 +165,7 @@ header {
   <!-- Logo that links back to the homepage -->
   <header>
     <a href="https://dreamingofyuu.github.io/fan_yukie_a3/">
-      <img src="logo.png" alt="Gamiverse Logo" class="logo">
+      <img src="Y.png" alt="Gamiverse Logo" class="logo">
     </a>
     <!-- Navigation bar -->
     <nav>
@@ -111,13 +178,16 @@ header {
   </header>
   <!-- Games Section -->
   <main class="games">
-    <h1>Games</h1>
-    <h3>
-      Games are sorted by company. Click on the company name to discover the games I've played!
-    </h3>
-  
-    <div class="row">
-  <div class="column">
+    
+    <!-- Top banner -->
+    <div class="container">
+    <img src="digital-art-beautiful-mountains_23-2151123688.avif" alt="Games Page Banner" style="width:100%;">
+    <div class="bg-text"><h1>Games</h1>
+      </div>
+  </div>
+    <h3>Games are sorted by company. Click on the company name to discover the games I've played!</h3>
+    
+
     <!-- Hoyoverse Games -->
   <section id="Hoyoverse Games" class="games">
       <img src="ef6ae97143bb4b4fb023ddd6341d5823.png" alt="Hoyoverse Games" width="auto" height="300">
